@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <head>
+    <title>Congratulations !!!</title>
+    <script type="text/javascript" src="/external/jquery/1.6.2/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script language="javascript" type="text/javascript">
+      $(document).ready(function () {
+      HideHeader();
+      });
+
+      function HideHeader()
+      {
+      $("#headerDiv").hide();
+      }
+    </script>
+  </head>
+  <content>
+    <div id="mainDiv">
+      <div>
+        <h2>Congratulations !!!</h2>
+        <p style="margin-top:20px;">Thank you for choosing Ratna. Ratna (v 0.2) is now successfully installed.</p>
+        <p style="padding-top:10px">
+          RatnaZone, the official website of Ratna software, is a wonderful resource to help you learn more about Ratna.
+
+          At RatnaZone, you can download templates and plugins to customize your website. RatnaZone has resources
+          to help you extend Ratna software and platform.
+
+          Please visit <a href="http://ratnazone.com">RatnaZone</a> to learn more.
+        </p>
+        <p style="padding-top:10px"> 
+          We recommend that you change the admin password after the first login at [<a href="/r-admin">Ratna Console</a>].
+        </p>
+      </div>
+    </div>
+  </content>
+</page>

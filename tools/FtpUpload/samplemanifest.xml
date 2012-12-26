@@ -1,0 +1,25 @@
+<ftp>
+    <server>
+      <host>ftp://ftphost.com</host>
+      <login>username</login>
+      <password>password</password>
+    </server>
+    <transfers>
+      <transfer>
+          <from>
+            <directory>C:\source\website\site1</directory>
+            <files filter="*"/>	
+          </from>
+          <to>/</to>
+      </transfer>
+      <transfer>
+        <from>
+          <directory>C:\source\website\site1\subsite1</directory>
+          <files>
+            <file>default.aspx</file>
+          </files>
+        </from>
+        <to>/subsite/</to>
+      </transfer>
+    </transfers>
+</ftp>

@@ -1,0 +1,11 @@
+<build>
+    <project>web.csproj</project>
+    <target>ratna\web</target>
+    <properties file="Properties\AssemblyInfo.cs">
+        <property name="AssemblyVersion" value="0.2.0.0"/>
+        <property name="Guid" value="d5544de9-2492-41c2-b772-72c70b7c1462" />
+        <property name="AssemblyTitle" value="Ratna Web" />
+        <property name="AssemblyProduct" value="RatnaWeb" />
+        <property name="AssemblyCulture" value="" />
+    </properties>
+</build>

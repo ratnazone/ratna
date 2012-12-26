@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Jardalu.Ratna.Web.Admin.Template.admin" %>
+
+<%@ Register TagPrefix="Admin" TagName="Navigation" Src="~/r-admin/controls/Navigation.ascx" %>
+<%@ Register TagPrefix="Admin" TagName="Footer" Src="~/r-admin/controls/Footer.ascx" %>
+<%@ Register TagPrefix="Admin" TagName="BreadCrumb" Src="~/r-admin/controls/BreadCrumb.ascx" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="css/960.css" type="text/css" />
+    <link rel="stylesheet" href="css/template.css" type="text/css" />
+    <link rel="stylesheet" href="css/colour.css" type="text/css" />
+
+    <script type="text/javascript" src='<%=ResolveUrl("~/r-admin/template/js/glow/1.7.0/core/core.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/r-admin/template/js/glow/1.7.0/widgets/widgets.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/r-admin/scripts/breadcrumb.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/external/jquery/1.6.2/jquery-1.6.2.min.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/external/simplemodal/jquery.simplemodal.js")%>'></script>
+
+    <script type="text/javascript" src='<%=ResolveUrl("~/scripts/constants.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/scripts/common.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/scripts/snippet.js")%>'></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>    
+              
+        <!-- heading -->
+
+        <h1 id="heading"><img id="Img1" alt="logo" src="~/images/logo.png" runat="server"/><%= ResourceManager.GetLiteral("MasterPage.Heading")%></h1>
+		
+        <!-- navigation control -->
+        <Admin:Navigation id="navigation" runat="server" />
+
+        <!-- breadcrumb -->
+        <Admin:BreadCrumb id="breadcrumb" runat="server" />
+
+        <asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+		
+       </asp:ContentPlaceHolder>
+
+        <!-- footer -->
+        <Admin:Footer id="footer" runat="server" />
+</body>
+</html>

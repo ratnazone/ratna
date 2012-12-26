@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Literals>
+  
+  <Area Name="Login">
+    <!-- title -->
+    <Literal Name="Title">Login</Literal>
+    
+    <!-- labels -->
+    <Literal Name="Username">username</Literal>
+    <Literal Name="Password">password</Literal>
+    <Literal Name="RememberMe">remember me</Literal>
+    <Literal Name="Login">Login</Literal>
+    
+    <Literal Name="WrongUserNamePassword">Wrong username or password.</Literal>
+    <Literal Name="UserNotActivated">User has not been activated.</Literal>
+    <Literal Name="UserNotAuthorized">User is not authorized.</Literal>
+  </Area>
+  
+  <Area Name="Logout">
+    
+    <!-- title -->
+    <Literal Name="Title">Logout</Literal>
+
+    <Literal Name="LogoutSuccess">You have successfully logout.</Literal>
+  </Area>
+  
+  <Area Name="MasterPage">
+    <Literal Name="Heading">Ratna Console</Literal>
+  </Area>
+
+  <Area Name="Confirm">
+    <Literal Name="Heading">Confirm</Literal>
+    <Literal Name="Yes">Yes</Literal>
+    <Literal Name="No">No</Literal>
+  </Area>
+
+  <Area Name="Common">
+    <Literal Name="Search">Search</Literal>
+    <Literal Name="NotFound">Not found.</Literal>
+  </Area>
+
+  <Area Name="Admin.Navigation">
+    <Literal Name="Overview">Overview</Literal>
+    <Literal Name="Articles">Posts</Literal>
+    <Literal Name="Pages">Pages</Literal>
+    <Literal Name="Media">Media</Literal>
+    <Literal Name="Comments">Comments</Literal>
+    <Literal Name="Users">Users</Literal>
+    <Literal Name="Profile">Profile</Literal>
+    <Literal Name="Settings">Settings</Literal>
+    <Literal Name="Forms">Forms</Literal>
+    <Literal Name="Apps">Apps</Literal>
+  </Area>
+
+  <Area Name="Admin.Breadcrumb">
+    <Literal Name="Home">Home</Literal>
+    <Literal Name="Users">Users</Literal>
+    <Literal Name="Profile">Profile</Literal>
+    <Literal Name="Edit.Profile">Edit Profile</Literal>
+    <Literal Name="Articles">Posts</Literal>
+    <Literal Name="Pages">Pages</Literal>
+    <Literal Name="Settings">Settings</Literal>
+    <Literal Name="Edit.Template">Edit Template</Literal>
+    <Literal Name="New.Template">New Template</Literal>
+    <Literal Name="Media">Media</Literal>
+    <Literal Name="Comments">Comments</Literal>
+    <Literal Name="Forms">Forms</Literal>
+    <Literal Name="Comments.Pending">Pending Comments</Literal>
+    <Literal Name="Comments.Approved">Approved Comments</Literal>
+    <Literal Name="Apps">Apps</Literal>
+  </Area>
+
+  <Area Name="Admin.Footer">
+    <Literal Name="SignOut">Sign out</Literal>
+  </Area>
+
+  <Area Name="Admin.Common">
+    <Literal Name="Home">Home</Literal>
+    <Literal Name="More">More</Literal>
+    <Literal Name="Save">Save</Literal>
+    <Literal Name="Cancel">Cancel</Literal>
+    <Literal Name="Delete">Delete</Literal>
+    <Literal Name="Edit">Edit</Literal>
+    <Literal Name="Preview">Preview</Literal>
+    <Literal Name="AccessDenied">Access denied.</Literal>
+    <Literal Name="User">User</Literal>
+    <Literal Name="Group">Group</Literal>
+    <Literal Name="Search">Search</Literal>
+    <Literal Name="On">On</Literal>
+    <Literal Name="Off">Off</Literal>
+    <Literal Name="Close">Close</Literal>
+    <Literal Name="CreatedDate">Created On</Literal>
+    <Literal Name="UpdatedDate">Updated On</Literal>
+    <Literal Name="Actions">Actions</Literal>
+    <Literal Name="List">List</Literal>
+    <Literal Name="Upload">Upload</Literal>
+    <Literal Name="Select">Select</Literal>
+    <Literal Name="Remove">Remove</Literal>
+    <Literal Name="Saved">Saved</Literal>
+    <Literal Name="Title">Title</Literal>
+    <Literal Name="Name">Name</Literal>
+    <Literal Name="Url">Url</Literal>
+    <Literal Name="Description">Description</Literal>
+  </Area>
+
+  <Area Name="Admin.Articles">
+    <Literal Name="Post">Post</Literal>
+    <Literal Name="Metadata">Metadata</Literal>
+    <Literal Name="Media">Media</Literal>
+    <Literal Name="List.PageTitle">Posts</Literal>
+    <Literal Name="List.AddNew">New post</Literal>
+    <Literal Name="List.Preview">Preview</Literal>
+    <Literal Name="List.Edit">Edit</Literal>
+    <Literal Name="List.Delete">Delete</Literal>
+    <Literal Name="List.Publish">Publish</Literal>
+    <Literal Name="List.Url">Url</Literal>
+    <Literal Name="List.Title">Title</Literal>
+    <Literal Name="List.RevertToVersion">Revert to version</Literal>
+    <Literal Name="Draft">Draft Posts</Literal>
+    <Literal Name="Published">Published Posts</Literal>
+    <Literal Name="NoArticles">No Posts</Literal>
+    <Literal Name="New">New Post</Literal>
+    <Literal Name="DeleteVersion">Delete Version</Literal>
+    <Literal Name="Edit">Edit Post</Literal>
+    <Literal Name="Edit.Versions">Versions</Literal>
+    <Literal Name="Edit.Title">Title</Literal>
+    <Literal Name="Edit.Title.Help">Alpha-numeric characters only.</Literal>
+    <Literal Name="Edit.Tags">Tags</Literal>
+    <Literal Name="Edit.Tags.Help">Comma separated tags. Used as keywords meta-data (SEO usage)</Literal>
+    <Literal Name="Edit.Description">Description</Literal>
+    <Literal Name="Edit.Description.Help">Used as description meta-data (SEO usage).</Literal>
+    <Literal Name="Edit.NavigationTab">Navigation Tab</Literal>
+    <Literal Name="Edit.NavigationTab.Help">Used in navigation (when supported by template)</Literal>
+    <Literal Name="Edit.Url">Url</Literal>
+    <Literal Name="Edit.Url.Help">Url must start with '/'</Literal>
+    <Literal Name="Edit.Url.Validate.Success">Url is valid and can be used.</Literal>
+    <Literal Name="Edit.Url.Validate.Error">Url is invalid or already in use.</Literal>
+    <Literal Name="Edit.Summary">Summary</Literal>
+    <Literal Name="Edit.Summary.Help">Leave blank for automatic summary.</Literal>
+    <Literal Name="Edit.Post">Post</Literal>
+    <Literal Name="Edit.NoArticle">No post found with the URL.</Literal>
+    <Literal Name="Edit.ValidateKey">validate</Literal>
+    <Literal Name="Edit.Images.AddImageTitle">Click to upload image to post.</Literal>
+    <Literal Name="Edit.Images.SelectImageTitle">Click to add existing images to post.</Literal>
+    <Literal Name="Edit.Save">save</Literal>
+    <Literal Name="Edit.Cancel">cancel</Literal>
+    <Literal Name="Edit.Publish">publish</Literal>
+    <Literal Name="Edit.Create.Error">Unable to create post.</Literal>
+    <Literal Name="Edit.Update.Error">Unable to update post.</Literal>
+    <Literal Name="Versions">Versions</Literal>
+    <Literal Name="Versions.Url">Url</Literal>
+    <Literal Name="Versions.Owner">Owner</Literal>
+    <Literal Name="Versions.Version">Version</Literal>
+    <Literal Name="Versions.LastModified">Last Modified</Literal>
+    <Literal Name="Versions.CreatedDate">Created Date</Literal>
+    <Literal Name="Versions.Permissions">Permissions</Literal>
+    <Literal Name="Versions.Permissions.Save">Save</Literal>
+    <Literal Name="Versions.Permissions.Cancel">Cancel</Literal>
+    <Literal Name="Versions.Permissions.SearchUser">Search user or group</Literal>
+    <Literal Name="Versions.Permissions.SearchUserGroupToAdd">Search user or group to add permissions :</Literal>
+    <Literal Name="Versions.Permissions.NoUserOrGroupFound">No user or group found for the search criteria.</Literal>
+    <Literal Name="Versions.Permissions.UserOrGroupFound">User or group found for the search criteria.</Literal>
+    <Literal Name="Versions.Permissions.EnterSearchCriteria">Please enter search criteria.</Literal>
+    <Literal Name="Versions.Permissions.NoPermissionsChecked">Please check atleast one permission before saving.</Literal>
+    <Literal Name="Versions.Permissions.PermissionsDeleted">Remove permissions.</Literal>
+    <Literal Name="Versions.Permissions.Principal">Principal</Literal>
+    <Literal Name="Versions.Permissions.Delete">Delete</Literal>
+    <Literal Name="Versions.Permissions.Acls.Read">Read</Literal>
+    <Literal Name="Versions.Permissions.Acls.Write">Write</Literal>
+    <Literal Name="Versions.Permissions.Acls.Delete">Delete</Literal>
+    <Literal Name="Versions.Permissions.Acls.Grant">Grant</Literal>
+    <Literal Name="Versions.Versions">Versions</Literal>
+    <Literal Name="Versions.Versions.LastModifiedDate">Last Modified On</Literal>
+    <Literal Name="Versions.Versions.ArchivedDate">Archived On</Literal>
+    <Literal Name="Delete.Success">Deleted.</Literal>
+    <Literal Name="Delete.Confirmation">Do you really want to delete post at '{0}'?</Literal>
+    <Literal Name="Publish.Confirmation">Publishing post at '{0}', continue ?</Literal>
+    <Literal Name="Publish.Success">Published.</Literal>
+    <Literal Name="Delete.SelectAtleastOne">Please select atleast one post to delete.</Literal>
+    <Literal Name="Delete.MultiArticles">Deleting selected posts, continue ?</Literal>
+    <Literal Name="Publish.SelectAtleastOne">Please select atleast one post to publish.</Literal>
+    <Literal Name="Publish.MultiArticles">Publishing selected posts, continue ?</Literal>
+    <Literal Name="DeleteVersion.Confirmation">Do you really want to delete version '{0}'?</Literal>
+    <Literal Name="RevertVersion.Confirmation">Do you really want to revert to version '{0}'?</Literal>
+    <Literal Name="Media.Images">Images</Literal>
+    <Literal Name="Media.Images.Help">Images used in gallery</Literal>
+    <Literal Name="Media.Images.Referenced">Images Referenced</Literal>
+    <Literal Name="Media.Images.Referenced.Help">Images referenced in the post</Literal>
+    <Literal Name="Media.Remove.SelectAtleastOne">Please select atleast one image to remove.</Literal>
+    <Literal Name="Media.Remove.MultiImages">Removing selected images from gallery, continue ?</Literal>
+    <Literal Name="Media.Remove.MultiImages.Success">Removed selected images from gallery.</Literal>
+  </Area>
+
+  <Area Name="Admin.Pages">
+    <Literal Name="List.PageTitle">Pages</Literal>
+    <Literal Name="List.AddNew">New page</Literal>
+    <Literal Name="Draft">Draft Pages</Literal>
+    <Literal Name="Published">Published Pages</Literal>
+    <Literal Name="New">New Page</Literal>
+    <Literal Name="Edit">Edit Page</Literal>
+    <Literal Name="NoPages">No Pages</Literal>
+    <Literal Name="Page">Page</Literal>
+    <Literal Name="Edit.Head">Head</Literal>
+    <Literal Name="Edit.Head.Help">Used in head tag of page</Literal>
+  </Area>
+  
+  <Area Name="Admin.Profile">
+    <Literal Name="PageTitle">Profile</Literal>
+    <Literal Name="Header">Profile</Literal>
+    <Literal Name="LastSignedIn">Last Signed In : </Literal>
+    <Literal Name="LastSigned">Last Signin On</Literal>
+    <Literal Name="CreatedOn">Created On</Literal>
+    <Literal Name="DisplayName">Display Name</Literal>
+    <Literal Name="FirstName">First Name</Literal>
+    <Literal Name="LastName">Last Name</Literal>
+    <Literal Name="Email">Email</Literal>
+    <Literal Name="Alias">Alias</Literal>
+    <Literal Name="Description">Description</Literal>
+    <Literal Name="Edit">Edit</Literal>
+    <Literal Name="Edit.Title">Edit Profile</Literal>
+    <Literal Name="Edit.Header">Edit Profile</Literal>
+    <Literal Name="Edit.ChangePhoto">Change Photo</Literal>
+    <Literal Name="Edit.Saving">Saving...</Literal>
+    <Literal Name="Edit.Saved">Saved.</Literal>
+    <Literal Name="Edit.SavingFailed">Error Saving.</Literal>
+    <Literal Name="ChangePassword">Change Password</Literal>
+    <Literal Name="OldPassword">Old Password</Literal>
+    <Literal Name="NewPassword">New Password</Literal>
+    <Literal Name="RetypeNewPassword">Retype New Password</Literal>
+    <Literal Name="MustChangePassword">You must change password</Literal>
+    <Literal Name="WrongOldPassword">Old password does not match</Literal>
+    <Literal Name="ChangePassword.Success">Password successfully updated</Literal>
+    <Literal Name="ChangePassword.Error">Unable to update password</Literal>
+  </Area>
+
+  <Area Name="Admin.Users">
+    <Literal Name="Title">Users</Literal>
+    <Literal Name="AddNew">Add User</Literal>
+    <Literal Name="NoUsers">No users</Literal>
+    <Literal Name="NoUserWithAlias">No user found</Literal>
+    <Literal Name="Active">Active Users</Literal>
+    <Literal Name="Pending">Pending Users</Literal>
+    <Literal Name="Deleted">Deleted Users</Literal>
+    <Literal Name="Alias">Alias</Literal>
+    <Literal Name="Name">Name</Literal>
+    <Literal Name="Email">Email</Literal>
+    <Literal Name="LastLogin">Last Login</Literal>
+    <Literal Name="CreatedOn">Created On</Literal>
+    <Literal Name="Activate">Activate</Literal>
+    <Literal Name="Delete">Delete</Literal>
+    <Literal Name="Activation.Success">User Activated</Literal>
+    <Literal Name="Activation.Failure">User activation failed.</Literal>
+    <Literal Name="Delete">Delete</Literal>
+    <Literal Name="Deletion.Success">User deleted</Literal>
+    <Literal Name="Deletion.Failure">User deletion failed.</Literal>
+    <Literal Name="Membership.Title">Membership</Literal>
+    <Literal Name="Membership.Group">Group</Literal>
+    <Literal Name="Membership.Remove">Remove</Literal>
+    <Literal Name="Membership.Group.AddNew">Search groups to give membership:</Literal>
+    <Literal Name="Membership.Group.Search">Search</Literal>
+  </Area>
+
+  <Area Name="Admin.Settings">
+    <Literal Name="Title">Settings</Literal>
+    <Literal Name="Configuration.Header">Configuration</Literal>
+    <Literal Name="Configuration.Logging">Logging</Literal>
+    <Literal Name="Configuration.LoggingLevel">Log Level</Literal>
+    <Literal Name="SiteConfiguration.Header">Site Configuration</Literal>
+    <Literal Name="SiteConfiguration.Locale">Locale</Literal>
+    <Literal Name="SiteConfiguration.CommentModeration">Comment Moderation</Literal>       
+    <Literal Name="Notification.Title">Notification</Literal>
+    <Literal Name="Notification.NotifyTo">Notify To</Literal>
+    <Literal Name="Notification.NotifyTo.Help">Email address for notification</Literal>
+    <Literal Name="Notification.Comment">Comment Notification</Literal>
+    <Literal Name="Notification.FormsResponse">Forms Response Notification</Literal>
+    <Literal Name="Smtp.Title">SMTP Settings</Literal>
+    <Literal Name="Smtp.Address">SMTP Address</Literal>
+    <Literal Name="Smtp.Address.Help">SMTP server for sending emails</Literal>
+    <Literal Name="Smtp.From">From Email</Literal>
+    <Literal Name="Smtp.From.Help">Notification sender's email address</Literal>
+    <Literal Name="Smtp.UserName">User</Literal>
+    <Literal Name="Smtp.UserName.Help">Username to authenticate with SMTP server</Literal>
+    <Literal Name="Smtp.Password">Password</Literal>
+    <Literal Name="Smtp.Password.Help">Password to authenticate with SMTP server</Literal>
+    <Literal Name="CustomErrors.Title">Custom Errors</Literal>
+    <Literal Name="CustomErrors.Error404">Error 404</Literal>
+    <Literal Name="CustomErrors.Error404.Help">Enter url to redirect when page is not found.</Literal>
+    <Literal Name="CustomErrors.Error500">Error 500</Literal>
+    <Literal Name="CustomErrors.Error500.Help">Enter url to redirect when server crashes.</Literal>
+    <Literal Name="CustomErrors.ErrorOthers">All other errors</Literal>
+    <Literal Name="CustomErrors.ErrorOthers.Help">Enter url to redirect other error occurs.</Literal>
+    <Literal Name="AutoPaths.Title">Auto Paths</Literal>
+    <Literal Name="AutoPaths.AddNew">New Path</Literal>
+    <Literal Name="AutoPaths.NoAutoPathFound">No auto path found.</Literal>
+    <Literal Name="AutoPaths.EditPath">Edit Path</Literal>
+    <Literal Name="AutoPaths.Title.Help">Title for the path</Literal>
+    <Literal Name="AutoPaths.PathUrl">Path</Literal>
+    <Literal Name="AutoPaths.PathUrl.Help">Url for the path</Literal>
+    <Literal Name="AutoPaths.PathType">Path Type</Literal>
+    <Literal Name="AutoPaths.Navigation">Navigation tab</Literal>
+    <Literal Name="AutoPaths.Navigation.Help">Selected tab when path is displayed</Literal>
+    <Literal Name="AutoPaths.PageSize">Page Size</Literal>
+    <Literal Name="AutoPaths.PageSize.Help">Items displayed per page</Literal>
+    <Literal Name="AutoPaths.Delete.Confirmation">Do you really want to delete Auto Path from '{0}'.</Literal>
+    <Literal Name="AutoPaths.Delete.Success">Auto Path deleted</Literal>
+  </Area>
+  
+  <Area Name="Admin.Templates">
+    <Literal Name="Title">Templates</Literal>
+    <Literal Name="List.Header">Templates</Literal>
+    <Literal Name="List.AddNewTemplate">New template</Literal>
+    <Literal Name="List.Edit">Edit</Literal>
+    <Literal Name="List.Name">Name</Literal>
+    <Literal Name="List.TemplatePath">Path</Literal>
+    <Literal Name="List.UrlPath">Url</Literal>
+    <Literal Name="List.Active">Active</Literal>
+    <Literal Name="List.Delete">Delete</Literal>
+    <Literal Name="List.NoTemplatesFound">No templates</Literal>
+    <Literal Name="Edit.NoTemplatesFound">No template found for the path</Literal>
+    <Literal Name="Edit.Header">Edit Template</Literal>
+    <Literal Name="Edit.Name">Name</Literal>
+    <Literal Name="Edit.Active">Active</Literal>
+    <Literal Name="Edit.UrlPath">Url</Literal>
+    <Literal Name="Edit.TemplatePath">Template Path</Literal>
+    <Literal Name="Edit.MasterFile">Master File</Literal>
+    <Literal Name="Edit.NavigationControlName">Navigation Control</Literal>
+    <Literal Name="Edit.Save">Save</Literal>
+    <Literal Name="Edit.Cancel">Cancel</Literal>
+    <Literal Name="Delete.Success">Deleted.</Literal>
+    <Literal Name="Delete.Confirmation">Do you really want to delete template from path '{0}'.</Literal>
+    <Literal Name="Zip.NoMaster">The template does not contain master file.</Literal>
+    <Literal Name="Zip.MoreThanOneMaster">The template contains more than one master file.</Literal>
+    <Literal Name="Upload.Header">Upload Template</Literal>
+    <Literal Name="Upload.Select">Template</Literal>
+    <Literal Name="Upload.MustBeZip">Template must be packed into a zip file.</Literal>
+    <Literal Name="Upload.PathAlreadyInUse">Template path is already in use.</Literal>
+  </Area>
+
+  <Area Name="Admin.Media">
+    <Literal Name="PageTitle">Media</Literal>
+    <Literal Name="Photo">Photo</Literal>
+    <Literal Name="List.AllHeader">Files</Literal>
+    <Literal Name="List.All.NoFound">No Files</Literal>
+    <Literal Name="List.PhotoHeader">Photos</Literal>
+    <Literal Name="List.Edit">Edit</Literal>
+    <Literal Name="List.Add">Add</Literal>
+    <Literal Name="List.AddNewMedia">Add media</Literal>
+    <Literal Name="List.NewPhoto">New Photo</Literal>
+    <Literal Name="List.NewVideo">New Video</Literal>
+    <Literal Name="List.NewDocument">New Document</Literal>
+    <Literal Name="List.NewOther">New File</Literal>
+    <Literal Name="List.Preview">Preview</Literal>
+    <Literal Name="List.Name">Name</Literal>
+    <Literal Name="List.Url">Url</Literal>
+    <Literal Name="List.CreatedDate">Uploaded on</Literal>
+    <Literal Name="List.Delete">Delete</Literal>
+    <Literal Name="List.NoPhotosFound">No photos found</Literal>
+    <Literal Name="Edit.Photo.New">New Photo</Literal>
+    <Literal Name="Edit.Photo.Edit">Edit Photo</Literal>
+    <Literal Name="Edit.Photo.Upload">Upload Photo</Literal>
+    <Literal Name="Edit.Photo.Url">Url</Literal>
+    <Literal Name="Edit.Photo.Height">Height</Literal>
+    <Literal Name="Edit.Photo.Width">Width</Literal>
+    <Literal Name="Edit.Photo.Tags">Tags</Literal>
+    <Literal Name="Edit.Photo.AutoGenerated">Automatically generated</Literal>
+    <Literal Name="Edit.Photo.NoPhotoFound">No photo found for the given url.</Literal>
+    <Literal Name="List.VideoHeader">Videos</Literal>
+    <Literal Name="Edit.Video.New">New Video</Literal>
+    <Literal Name="Edit.Video.Edit">Edit Video</Literal>
+    <Literal Name="Edit.Video.Upload">Upload Video</Literal>
+    <Literal Name="List.NoVideosFound">No videos found</Literal>
+    <Literal Name="List.DocumentHeader">Documents</Literal>
+    <Literal Name="List.NoDocumentsFound">No documents found</Literal>
+    <Literal Name="Edit.Document.New">New Document</Literal>
+    <Literal Name="Edit.Document.Edit">Edit Document</Literal>
+    <Literal Name="Edit.Document.Upload">Upload Document</Literal>
+    <Literal Name="List.OtherHeader">Other Files</Literal>
+    <Literal Name="Edit.Other.New">New File</Literal>
+    <Literal Name="Edit.Other.Edit">Edit File</Literal>
+    <Literal Name="Edit.Other.Upload">Upload file</Literal>
+    <Literal Name="List.NoOthersFound">No other files found</Literal>
+    <Literal Name="Gallery">Gallery</Literal>
+    <Literal Name="Gallery.List.Header">Gallery</Literal>
+    <Literal Name="Gallery.List.NoGalleryFound">No galleries found</Literal>
+    <Literal Name="Gallery.New">New Gallery</Literal>
+    <Literal Name="Gallery.Edit">Edit Gallery</Literal>
+    <Literal Name="Gallery.Navigation">Navigation</Literal>
+    <Literal Name="Gallery.Error.NameUrlInvalid">Gallery name or URL is invalid. Gallery's URL must start with '/'.</Literal>
+    <Literal Name="Gallery.Error.AlreadyExists">A gallery with the given URL already exists.</Literal>
+    <Literal Name="Gallery.Delete.Confirmation">Do you want to delete gallery present at '{0}'?</Literal>
+    <Literal Name="Gallery.Delete.Success">Gallery deleted.</Literal>
+  </Area>
+
+  <Area Name="Admin.Comments">
+    <Literal Name="Title">Comments</Literal>
+    <Literal Name="List.Pending.Header">Pending Comments</Literal>
+    <Literal Name="List.Pending.NoComments">No pending comments</Literal>
+    <Literal Name="List.Approved.Header">Approved Comments</Literal>
+    <Literal Name="List.Approved.NoComments">No approved comments</Literal>
+    <Literal Name="List.Key">Key</Literal>
+    <Literal Name="List.User">User</Literal>
+    <Literal Name="List.Comment">Comment</Literal>
+    <Literal Name="List.Delete">Delete</Literal>
+    <Literal Name="List.Approve">Approve</Literal>
+    <Literal Name="Delete.Success">Deleted</Literal>
+    <Literal Name="Delete.Failure">Unable to delete</Literal>
+    <Literal Name="Delete.Confirmation">Do you really want to delete the comment.</Literal>
+    <Literal Name="Approve.Success">Approved</Literal>
+    <Literal Name="Approve.Failure">Unable to approve</Literal>
+  </Area>
+
+  <Area Name="Admin.Forms">
+    <Literal Name="Form">Form</Literal>
+    <Literal Name="Name">Name</Literal>
+    <Literal Name="DisplayName">Display Name</Literal>
+    <Literal Name="Fields">Fields</Literal>
+    <Literal Name="AddNew">New Form</Literal>
+    <Literal Name="PageTitle">Forms</Literal>
+    <Literal Name="NotFound">No form found with the name {0}.</Literal>
+    <Literal Name="NoForms">No forms.</Literal>
+    <Literal Name="NoResponses">No entries.</Literal>
+    <Literal Name="Delete.Confirmation">Do you really want to delete form '{0}'?</Literal>
+    <Literal Name="Delete.Success">Deleted.</Literal>
+    <Literal Name="Save.Error.FormNameInvalid">Form name is invalid. Name must only contain alphabets and digits.</Literal>
+    <Literal Name="Save.Error.FormNameInUse">Unable to save the form. Form name is already in use.</Literal>
+    <Literal Name="Save.Error.NameAndUIdMismatch">Unable to save the form. There is a mismatch in the name and uid.</Literal>
+    <Literal Name="Save.Error.NoFormFoundWithName">Unable to save the form. No form found with the name.</Literal>
+    <Literal Name="Save.Error.NameOrDisplayNameNotSpecified">Unable to save the form. No name or display name supplied.</Literal>    
+    <Literal Name="List.Edit">Edit</Literal>
+    <Literal Name="List.Responses">Entries</Literal>
+    <Literal Name="List.Delete">Delete</Literal>
+    <Literal Name="FieldName">Name</Literal>
+    <Literal Name="FieldType">Type</Literal>
+    <Literal Name="FieldRequired">Required</Literal>
+    <Literal Name="Field.New">New Field</Literal>
+    <Literal Name="Field.Save.Error.FieldNameInUse">A field already exists with the name</Literal>
+    <Literal Name="Field.Save.Error.FieldNameInInvalid">Invalid field name</Literal>
+    <Literal Name="FormOrFieldNotFound">No form '{0}' or field '{1}' found.</Literal>
+    <Literal Name="Field.Delete.Confirmation">Do you really want to delete field '{0}'?</Literal>
+    <Literal Name="Field.Delete.Success">Deleted.</Literal>
+    <Literal Name="Responses.Delete.Confirmation">Do you really want to delete selected entries ?</Literal>
+    <Literal Name="Responses.Delete.Success">Deleted.</Literal>
+    <Literal Name="Responses.Delete.SelectAtleastOne">Select one or more entries to delete.</Literal>
+    <Literal Name="Entry.Edit">Edit Entry</Literal>
+    <Literal Name="Entry.New">New Entry</Literal>
+    <Literal Name="Entry.AddNew">Add Entry</Literal>
+    <Literal Name="Entry.Recent">Recent Form Entries</Literal>
+  </Area>
+
+  <Area Name="Admin.Apps">
+    <Literal Name="Title">Apps</Literal>
+    <Literal Name="UploadApp">Upload App</Literal>
+    <Literal Name="NoAppsActivated">No apps has been activated.</Literal>
+    <Literal Name="NoAppsInstalled">No apps require activation.</Literal>
+    <Literal Name="Installed">Installed Apps</Literal>
+    <Literal Name="Activated">Activated Apps</Literal>
+    <Literal Name="UploadMustBeZip">Apps must be packed into a zip file.</Literal>
+    <Literal Name="SelectAnAppToUpload">Please select an app to upload.</Literal>
+    <Literal Name="AppHasNoDescription">App does not have any description.</Literal>
+    <Literal Name="Details">Details</Literal>
+    <Literal Name="Edit">Edit</Literal>
+    <Literal Name="NoAppFound">No app found</Literal>
+    <Literal Name="AppProperties">App Properties</Literal>
+    <Literal Name="AppPropertiesHelp">App '{0}' can be customized with these properties. Properties marked with (*) is required for the app to work properly.</Literal>
+    <Literal Name="Activate">Activate</Literal>
+    <Literal Name="Deleting">Deleting</Literal>
+    <Literal Name="Deleted">Deleted</Literal>
+    <Literal Name="DeletionFailure">Deletion failed.</Literal>
+    <Literal Name="Activating">Activating</Literal>
+    <Literal Name="Activated">Activated</Literal>
+    <Literal Name="ActivationFailure">Activation failed.</Literal>
+    <Literal Name="Deactivate">Deactivate</Literal>
+    <Literal Name="InvalidAppAssembly">The assembly '{0}' specified for the app cannot be loaded.</Literal>
+    <Literal Name="InvalidAppEntry">The app entry '{0}' is invalid.</Literal>
+    <Literal Name="AppEntryNotFound">The app entry '{0}' cannot be found in the assembly '{1}'.</Literal>
+  </Area>
+
+  <Area Name="Comments">
+    <Literal Name="Invalid">Name, Email and Comments are required.</Literal>
+    <Literal Name="NewCommentSubject">New comment added</Literal>
+    <Literal Name="NewCommentBody">New comment added by {0} at link {1}</Literal>
+  </Area>
+
+  <Area Name="FormResponses">
+    <Literal Name="NewResponseSubject">New response added</Literal>
+    <Literal Name="NewResponseBody">A new response was added to form - {0}</Literal>
+    <Literal Name="Invalid">Form submission was not correct.</Literal>
+    <Literal Name="NotAllRequiredFieldsSupplied">Not all required fields were supplied.</Literal>
+    <Literal Name="FieldValueDoesnotMatchWithFieldType">Input of the fields do not match with the field type.</Literal>
+  </Area>
+
+  <Area Name="Errors">
+    <Literal Name="InternalServerError">Unexpected server exception. StickyId - {0}.</Literal>
+    <Literal Name="UploadMaxSizeExceeded">Exceeds the maximum size [{0} MB] that can be uploaded.</Literal>
+    <Literal Name="InvalidEmailAddress">Invalid email address.</Literal>
+  </Area>
+  
+  
+</Literals>

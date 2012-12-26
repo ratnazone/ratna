@@ -1,0 +1,29 @@
+﻿Page rendering logic
+
+     if the url belongs to an article
+         - get the article handler that can handle the artilce
+		 - load the ItemPage from the handler
+                  
+     if the url is found on the managed path 
+         - /page/{p}/{q}   --> ~/default.aspx?p={p}&q={q}
+                           --> defaults ( p = 0, q = "")
+                           
+         - /gallery/{name}  --> <template>/gallery.aspx?name={name}
+         
+         - /photo/<photo id>
+
+===============================================================================================
+
+managed paths
+  - name [Reqd]
+  - managed path url [Reqd] ( example : /page/{p}/{q} or /gallery/{name} )
+  - resolved path [Reqd] ( example : ~/default.aspx or ~/templates/zone/gallery.aspx )
+       :: the resolved path must start with "~" and should not contain query string
+  - defaults [Optional] ( example : p=1, if a value is not defined, it will be defaulted to string.Empty )
+
+  NOTE : when the page "default.aspx" or "gallery.aspx" is loaded, the values of the query strings
+         will be present in Page.RouteData.Values
+		 
+		 for example -> /gallery/my will have Page.RouteData.Values["name"] as "my"
+
+ NOTE : The resolved page MUST inherit from Jardalu.Ratna.Web.UI.DynamicWebPage

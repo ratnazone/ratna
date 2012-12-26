@@ -1,0 +1,59 @@
+<build>
+    <project>RatnaOM.csproj</project>
+    <target>ratna\om</target>
+    <properties file="Properties\AssemblyInfo.cs">
+        <property name="AssemblyVersion" value="0.2.0.0"/>
+        <property name="Guid" value="33b74cbc-de89-4f8d-aa11-cfd82d7923a9" />
+        <property name="AssemblyTitle" value="RatnaOM" />
+        <property name="AssemblyProduct" value="RatnaOM" />
+        <property name="InternalsVisibleTo" value="Jardalu.Ratna.WebOM,PublicKey=0024000004800000940000000602000000240000525341310004000001000100972e0d22a94d1e86431a22b8df88dcd07b2fef14507b9b35aca37677809c23216a8290acfc95af627581023be91250143dd9504ed216a1f5e6656c1d1bbabfe306b467682cec66a6b8b37fbb7164e7dd89e61f4208b04110b4b18a8d83a60b30e83e662fec47c169fb9222d605d9cd02db4f9f3202be15ab3382581687df18b9" />
+        <property name="InternalsVisibleTo" value="Jardalu.Ratna.Web,PublicKey=0024000004800000940000000602000000240000525341310004000001000100972e0d22a94d1e86431a22b8df88dcd07b2fef14507b9b35aca37677809c23216a8290acfc95af627581023be91250143dd9504ed216a1f5e6656c1d1bbabfe306b467682cec66a6b8b37fbb7164e7dd89e61f4208b04110b4b18a8d83a60b30e83e662fec47c169fb9222d605d9cd02db4f9f3202be15ab3382581687df18b9" />
+        <property name="InternalsVisibleTo" value="Jardalu.Ratna.Test,PublicKey=0024000004800000940000000602000000240000525341310004000001000100972e0d22a94d1e86431a22b8df88dcd07b2fef14507b9b35aca37677809c23216a8290acfc95af627581023be91250143dd9504ed216a1f5e6656c1d1bbabfe306b467682cec66a6b8b37fbb7164e7dd89e61f4208b04110b4b18a8d83a60b30e83e662fec47c169fb9222d605d9cd02db4f9f3202be15ab3382581687df18b9" />
+    </properties>
+    <passes>
+      <pass>
+        <exports>
+          <export file=".\backend\db.sql" folder="."/>
+          <export file=".\backend\schema.sql" folder="."/>
+          <export file=".\backend\versions.sql" folder="."/>
+        </exports>
+      </pass>
+        <pass>
+            <merge outputFile="0.1\schema.sql">
+                <file name=".\backend\0.1\schema\schema.sql" />
+                <file name=".\backend\0.1\schema\tvf.sql" />
+            </merge>
+        </pass>
+        <pass>
+            <merge outputFile="0.1\proc.sql">
+                <file name=".\backend\0.1\procs\sites.sql" />
+                <file name=".\backend\0.1\procs\article.sql" />
+                <file name=".\backend\0.1\procs\media.sql" />
+                <file name=".\backend\0.1\procs\tags.sql" />
+                <file name=".\backend\0.1\procs\group.sql" />
+                <file name=".\backend\0.1\procs\plugin.sql" />
+                <file name=".\backend\0.1\procs\search.sql" />
+                <file name=".\backend\0.1\procs\user.sql" />
+                <file name=".\backend\0.1\procs\acls.sql" />
+                <file name=".\backend\0.1\procs\principal.sql" />
+                <file name=".\backend\0.1\procs\util.sql" />
+            </merge>
+        </pass>
+        <pass>
+            <merge outputFile="0.2\schema.sql">
+                <file name=".\backend\0.2\schema\schema.sql" />
+                <file name=".\backend\0.2\schema\tvf.sql" />
+                <file name=".\backend\0.2\schema\index.sql" />
+            </merge>
+        </pass>
+        <pass>
+            <merge outputFile="0.2\proc.sql">
+                <file name=".\backend\0.2\procs\apps.sql" />
+                <file name=".\backend\0.2\procs\redirect.sql" />
+                <file name=".\backend\0.2\procs\article_2.sql" />
+                <file name=".\backend\0.2\procs\plugin_2.sql" />
+                <file name=".\backend\0.2\procs\media_2.sql" />
+            </merge>
+        </pass>
+    </passes>
+</build>

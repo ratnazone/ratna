@@ -1,0 +1,101 @@
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  width:380px;
+  z-index:50;
+  padding: 25px 25px 20px;
+}
+
+.messagepop #image_search
+{
+    margin-left: 10px;
+}
+
+.messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
+
+.messagepop #popupbody
+{
+    margin-top:5px;
+}
+
+.messagepop .selectable
+{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border: 2px solid grey;
+}
+
+.messagepop .hover{
+   border: 2px solid silver;
+}
+
+.messagepop .imageSelected
+{
+    opacity:0.3;  
+    filter:alpha(opacity=30);  
+    -moz-opacity:0.3; 
+}
+
+.messagepop #mpager
+{
+    display:block;
+}
+
+.messagepop #mpager ul
+{
+    border:0; 
+    margin-bottom:10px; 
+    padding:0;
+}
+
+.messagepop #mpager li{
+    border:0; 
+    margin:0; 
+    padding:0;
+    font-size:11px;
+    list-style:none;
+    display:inline;
+    float:left;
+ }
+ 
+.messagepop #mpager a{
+    border:solid 1px #DDDDDD;
+    margin-right:2px;
+    padding:3px 6px;
+ }
+ 
+.messagepop #mpager a:link,
+.messagepop #mpager a:visited {
+    color:#0063e3;
+    display:block;    
+    text-decoration:none;
+ }
+ 
+ .messagepop #mpager a:hover{
+    border:solid 1px #666666;
+ }
+ 
+ .messagepop #mpager .currentpage{
+     color:#ffffff;
+     border:solid 1px #DDDDDD;
+     background-color:silver;
+     display:block;
+     padding:3px 6px;
+     margin-right:2px;
+ }
+ 
+ .messagepop #mpager .divider
+ {
+      padding:4px 6px;
+ }
+
+

@@ -1,0 +1,270 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: Georgia, "Times New Roman" , Times, serif;
+    background-image: url('images/bk.png');
+}
+
+#header
+{
+    height: 40px;
+    padding: 10px;
+    background: #d8d8d8;
+}
+
+#wrapper
+{
+    min-height: 100%;
+    width: 900px;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -2em;
+    background-color: White;
+}
+
+.push
+{
+    height: 2em;
+}
+
+#footer
+{
+    height: 2em;
+    width: 880px;
+    background: #d8d8d8;
+    margin: 0 auto 0;
+    padding:10px;
+}
+
+#footer_linksDiv
+{
+    float: left;
+}
+
+#footer_copyrightDiv
+{
+    float: right;
+}
+
+
+#header nav
+{
+    background: #000305;
+    font-size: 1.143em;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+#header nav ul
+{
+    list-style: none;
+    margin: 0 auto;
+}
+
+#header nav li
+{
+    float: left;
+    display: inline;
+    margin: 0;
+}
+
+#header nav a:link, #header nav a:visited
+{
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+}
+
+#header nav a:hover, #header nav a:active, #header nav .active a:link, #header nav .active a:visited
+{
+    background: #C74451;
+    color: #fff;
+    text-shadow: none !important;
+}
+
+
+#logo
+{
+    height:32px;
+    border:none;    
+}
+
+#container
+{
+    padding:10px;
+    width:650px;
+    float:left;
+}
+
+#sidebar
+{
+    width:200px;
+    float:left;
+    border-left:1px solid silver;
+    padding:10px;
+    min-height : 600px;
+}
+
+#sidebar div
+{
+    padding:2px;
+    border:1px solid silver;
+    margin-bottom: 15px;
+}
+
+#sidebar div .header
+{
+    background-color:silver;
+    text-align:center;
+    padding:4px;
+}
+
+/*---------------------------------------- side menu ------------------------------*/
+/* Sidemenu */
+.sidemenu ul {
+	margin: 5px 0 5px 0;
+    padding: 0;
+	border-top:  1px  solid #E5E5E5;
+    color: #959595
+}
+.sidemenu ul li {
+	list-style: none;
+	margin: 0;
+	padding: 7px 5px;
+	border-bottom:  1px  solid #E5E5E5;
+}
+
+.sidemenu ul li.last 
+{
+    border-bottom : none;
+    margin-bottom: -5px;
+}
+
+.sidemenu ul li a:link,
+.sidemenu ul li a:visited {
+    color: #33799B;
+    padding: 0;
+	font-weight: bold;
+    text-transform:capitalize;
+    font-family:  'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, Sans-Serif;
+    font-size: 12px;
+}
+.sidemenu ul li a span {
+    display: block;
+	color: #858585;
+    font-family: Verdana, Sans-Serif;
+	font-style: normal;
+	font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+	text-transform: none;
+}
+.sidemenu ul li a:hover { color: #CC3300; }
+.sidemenu ul ul { margin: 0 0 0 5px; padding: 0; }
+.sidemenu ul ul li { border: none; }
+
+/*---------------------------------------------- recent comments-------------------------------------*/
+.recent-comments ul {
+   	margin-left: 0;
+    padding: 0;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+}
+.recent-comments ul li {
+	list-style: none;
+	font-size: 12px;
+	line-height: 1.5em;
+	padding: 7px 5px 7px 22px;
+	background: url(../images/speech-bubble.png)  no-repeat  2px 12px;
+    /* border-bottom: 1px solid #326B8D; */
+}
+.recent-comments ul li a:link,
+.recent-comments ul li a:visited {
+    padding-left: 0;
+}
+.recent-comments ul li cite {
+	font-size: .9em;
+	font-style: normal;
+}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
+
+
+/* ------Comments-----*/
+
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li.comment_odd, #comments li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments li.comment_odd a{color:#FF9900; background-color:#F7F7F7;}
+#comments li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments li.comment_even a{color:#FF9900; background-color:#E8E8E8;}
+#comments article, #comments header{display:block; width:100%;}
+#comments figure{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid #DEDACB; text-align:center;}
+#comments figure img{float:inherit;}
+#comments header address{font-weight:bold;}
+#comments header time{font-size:smaller;}
+#comments article section{margin:0; padding:0;}
+#comments article section p{margin:10px 5px 10px 0; padding:0;}
+
+#comments form{display:block; width:100%;}
+#comments form input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+#comments form textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+#comments form p{margin:5px 0;}
+#comments form #submit, #comments form #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; cursor:pointer;}
+
+/* ---- media collection page ---- */
+.mediacollection_header {margin-bottom:20px; }
+
+/* ------------ page ---------- */
+.pages {
+    padding: 1em;
+    margin: 1em 0;
+    clear: left;
+    font-size: 85%;
+}
+
+.pages a, .pages span {
+	color:#003366;
+    display: block;
+    float: left;
+    padding: 0.2em 0.5em;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.pages span.current {
+    border: 1px solid #A4A4A4;
+    font-weight: bold;
+    background: #A4A4A4;
+    color: #fff;
+}
+
+.pages a {
+    border: 1px solid #2E2E2E;
+    text-decoration: none;
+}
+
+.pages a:hover {
+    border-color: #A4A4A4;
+}

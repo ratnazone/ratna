@@ -1,0 +1,16 @@
+﻿
+Icons 
+========================================================================
+Icons by <a href="http://www.axialis.com" rel="nofollow">Axialis Team</a>
+
+
+Code
+========================================================================
+
+Crypto-256.js - Jeff Mott  http://code.google.com/p/crypto-js/
+datepicker - (http://www.kelvinluck.com/)
+
+
+Admin Template
+=========================================================================
+Mathew Davies - http://mathew-davies.co.uk/2010/03/13/free-admin-template.html

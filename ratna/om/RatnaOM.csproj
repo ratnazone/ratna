@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1B91424-1B5D-4734-84D9-D9A9F2C178FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jardalu.Ratna</RootNamespace>
+    <AssemblyName>Jardalu.Ratna</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\tools\jardalu.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\tools\external\log4net\log4net-1.2.10\bin\net\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\Site.cs" />
+    <Compile Include="Core\Apps\App.cs" />
+    <Compile Include="Core\Apps\AbstractApp.cs" />
+    <Compile Include="Core\Apps\AppManifestParser.cs" />
+    <Compile Include="Core\Apps\AppEvent.cs" />
+    <Compile Include="Core\Apps\KnownAppFields.cs" />
+    <Compile Include="Core\ResponseContent.cs" />
+    <Compile Include="Core\Apps\AppScope.cs" />
+    <Compile Include="Core\Articles\MetaArticle.cs" />
+    <Compile Include="Core\Comments\Comment.cs" />
+    <Compile Include="Core\Comments\CommentsPlugin.cs" />
+    <Compile Include="Core\Acls\AclType.cs" />
+    <Compile Include="Core\Articles\ArticleHandler.cs" />
+    <Compile Include="Core\Articles\ArticleStage.cs" />
+    <Compile Include="Core\Articles\BlogArticle.cs" />
+    <Compile Include="Core\Articles\BlogArticleHandler.cs" />
+    <Compile Include="Core\Articles\StaticArticleHandler.cs" />
+    <Compile Include="Core\Articles\StaticArticle.cs" />
+    <Compile Include="Core\Context.cs" />
+    <Compile Include="Core\Forms\FormEntryPlugin.cs" />
+    <Compile Include="Core\Forms\FormsPlugin.cs" />
+    <Compile Include="Core\Forms\Data.cs" />
+    <Compile Include="Core\Forms\Field.cs" />
+    <Compile Include="Core\Forms\FieldType.cs" />
+    <Compile Include="Core\Forms\Form.cs" />
+    <Compile Include="Core\Forms\FormEntry.cs" />
+    <Compile Include="Core\ICrudObject.cs" />
+    <Compile Include="Core\Media\BaseMedia.cs" />
+    <Compile Include="Core\Media\OtherMedia.cs" />
+    <Compile Include="Core\Media\Document.cs" />
+    <Compile Include="Core\Media\Video.cs" />
+    <Compile Include="Core\Media\MediaType.cs" />
+    <Compile Include="Core\Media\Photo.cs" />
+    <Compile Include="Core\Navigation\INavigationTag.cs" />
+    <Compile Include="Core\Pages\IPageStyle.cs" />
+    <Compile Include="Core\ISerializableObject.cs" />
+    <Compile Include="Core\Pages\PageStyle.cs" />
+    <Compile Include="Core\Tags\Tag.cs" />
+    <Compile Include="Database\ConnectionInformation.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Articles\Article.cs" />
+    <Compile Include="Core\Resource.cs" />
+    <Compile Include="Core\Tags\TagResource.cs" />
+    <Compile Include="Database\ArticleDbInteractor.cs" />
+    <Compile Include="Database\AclsDbInteractor.cs" />
+    <Compile Include="Database\AppsDbInteractor.cs" />
+    <Compile Include="Database\RedirectDbInteractor.cs" />
+    <Compile Include="Database\SiteDbInteractor.cs" />
+    <Compile Include="Database\UtilDbInteractor.cs" />
+    <Compile Include="Database\MediaDbInteractor.cs" />
+    <Compile Include="Database\PrincipalDbInteractor.cs" />
+    <Compile Include="Database\TagDbInteractor.cs" />
+    <Compile Include="Database\GroupDbInteractor.cs" />
+    <Compile Include="Database\PluginDbInteractor.cs" />
+    <Compile Include="Database\DbInteractor.cs" />
+    <Compile Include="Database\ObjectConverter.cs" />
+    <Compile Include="Database\UserDbInteractor.cs" />
+    <Compile Include="Exceptions\AccessDeniedException.cs" />
+    <Compile Include="Exceptions\ErrorCodes\ArticleErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\AclsErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\AppsErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\SiteErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\FormsErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\TemplateErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\MediaErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\UserErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\GroupErrorCodes.cs" />
+    <Compile Include="Exceptions\ErrorCodes\PluginErrorCodes.cs" />
+    <Compile Include="Exceptions\MessageException.cs" />
+    <Compile Include="Exceptions\ObjectNotFoundException.cs" />
+    <Compile Include="Plugins\SystemPlugin.cs" />
+    <Compile Include="Plugins\Plugin.cs" />
+    <Compile Include="Plugins\PluginData.cs" />
+    <Compile Include="Plugins\PluginDataQueryParameter.cs" />
+    <Compile Include="Profile\Principal.cs" />
+    <Compile Include="Resource\ArtliceMessages.cs" />
+    <Compile Include="Resource\AclsMessages.cs" />
+    <Compile Include="Resource\CommentMessages.cs" />
+    <Compile Include="Resource\AppsMessages.cs" />
+    <Compile Include="Resource\SiteMessages.cs" />
+    <Compile Include="Resource\FormMessages.cs" />
+    <Compile Include="Resource\MediaMessages.cs" />
+    <Compile Include="Saver\FileNamer.cs" />
+    <Compile Include="Saver\FileSaverFolderPattern.cs" />
+    <Compile Include="Saver\ImageSaver.cs" />
+    <Compile Include="Store\ArticleStore.cs" />
+    <Compile Include="Store\AclsStore.cs" />
+    <Compile Include="Store\AppStore.cs" />
+    <Compile Include="Store\UrlRedirectionStore.cs" />
+    <Compile Include="Store\SiteStore.cs" />
+    <Compile Include="Store\MediaStore.cs" />
+    <Compile Include="Store\PrincipalStore.cs" />
+    <Compile Include="Store\TagStore.cs" />
+    <Compile Include="Store\PluginStore.cs" />
+    <Compile Include="Store\GroupStore.cs" />
+    <Compile Include="Profile\Group.cs" />
+    <Compile Include="Profile\User.cs" />
+    <Compile Include="Store\UserStore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\CommonMessages.cs" />
+    <Compile Include="Resource\PluginMessages.cs" />
+    <Compile Include="Resource\ResourceManager.cs" />
+    <Compile Include="Resource\UserMessages.cs" />
+    <Compile Include="Templates\ISideNavigationControl.cs" />
+    <Compile Include="Templates\IBreadcrumbControl.cs" />
+    <Compile Include="Templates\INavigationControl.cs" />
+    <Compile Include="Saver\FileSaver.cs" />
+    <Compile Include="Core\WebContext.cs" />
+    <Compile Include="Utilities\Email\EmailConfiguration.cs" />
+    <Compile Include="Utilities\Email\EmailManager.cs" />
+    <Compile Include="Utilities\NavigationDataUtility.cs" />
+    <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="Utilities\ReflectionUtility.cs" />
+    <Compile Include="Utilities\PasswordUtility.cs" />
+    <Compile Include="Utilities\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Backend\0.1\Procs\acls.sql" />
+    <Content Include="Backend\0.1\Procs\sites.sql" />
+    <Content Include="Backend\0.1\Procs\util.sql" />
+    <Content Include="Backend\0.1\Procs\media.sql" />
+    <Content Include="Backend\0.1\Procs\principal.sql" />
+    <Content Include="Backend\0.1\Procs\search.sql" />
+    <Content Include="Backend\0.1\Procs\tags.sql" />
+    <Content Include="Backend\0.1\Schema\tvf.sql" />
+    <Content Include="Backend\0.2\Procs\apps.sql" />
+    <Content Include="Backend\0.2\Procs\article_2.sql" />
+    <Content Include="Backend\0.2\Procs\media_2.sql" />
+    <Content Include="Backend\0.2\Procs\plugin_2.sql" />
+    <Content Include="Backend\0.2\Procs\redirect.sql" />
+    <Content Include="Backend\0.2\Schema\index.sql" />
+    <Content Include="Backend\0.2\Schema\schema.sql" />
+    <Content Include="Backend\0.2\Schema\tvf.sql" />
+    <Content Include="Backend\clean.sql" />
+    <Content Include="Backend\schema.sql" />
+    <Content Include="Backend\versions.sql" />
+    <Content Include="Backend\0.1\Procs\article.sql" />
+    <Content Include="Backend\0.1\Procs\group.sql" />
+    <Content Include="Backend\0.1\Procs\plugin.sql" />
+    <Content Include="Backend\0.1\Procs\user.sql" />
+    <Content Include="Backend\db.sql" />
+    <Content Include="Backend\0.1\Schema\schema.sql" />
+    <Content Include="Database\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.cobra">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

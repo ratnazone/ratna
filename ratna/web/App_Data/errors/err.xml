@@ -1,0 +1,13 @@
+﻿<html>
+  <head>
+    <title>Unexpected Error</title>
+  </head>
+  <body>
+    <div id="mainDiv">
+      <div>
+        <h2>Unexpected Error</h2>
+        <p>Please contact system administrator</p>
+      </div>
+    </div>
+  </body>
+</html>

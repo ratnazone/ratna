@@ -1,0 +1,22 @@
+a.dp-choose-date {
+	float: left;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin: 0px 0px 0px 5px;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(calendar.png) no-repeat; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+/* makes the input field shorter once the date picker code
+ * has run (to allow space for the calendar icon
+ */
+input.dp-applied {
+	width: 140px;
+	float: left;
+}

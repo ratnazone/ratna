@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="system.master.cs" Inherits="Jardalu.Ratna.Web.templates.system.Template" %>
+
+<%@ Register TagPrefix="Ratna" TagName="Nav" Src="nav.ascx" %>
+<%@ Register TagPrefix="Ratna" TagName="Sidebar" Src="sidebar.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <!-- stylesheets -->
+    <link id="simplecsslink" rel="Stylesheet" type="text/css" href="/templates/system/system.css" />
+    <!-- scripts -->
+    <script type="text/javascript" src='<%=ResolveUrl("~/external/jquery/1.6.2/jquery-1.6.2.min.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/scripts/common.js")%>'></script>        
+    <script type="text/javascript" src='<%=ResolveUrl("~/scripts/constants.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/scripts/post.js")%>'></script>
+    <script type="text/javascript" src='<%=ResolveUrl("~/scripts/comments.js")%>'></script>
+    <!-- controls -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <Ratna:Nav runat="server" id="nav" />
+        </div>
+        <div id="container">
+            <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="sidebar">
+            <Ratna:Sidebar runat="server" id="sbar" />
+        </div>
+        <div class="push" style="clear:both">
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_linksDiv">
+            Powered by <a href="http://ratnazone.com" title="Powered by Ratna" class="footer_anchor">
+                Ratna</a>
+        </div>
+        <div id="footer_copyrightDiv">
+            &copy; Jardalu LLC 2012 <a href="http://jardalu.com">Jardalu.com</a>
+        </div>
+        <div style="clear: both">
+        </div>
+    </div>
+</body>
+</html>

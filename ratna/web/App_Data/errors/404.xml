@@ -1,0 +1,14 @@
+﻿<html>
+  <head>
+    <title>HTTP Error 404.0 - Not Found</title>
+  </head>
+  <body>
+    <!-- IE does not display custom HTML code for 404. -->
+    <div id="mainDiv">
+      <div>
+        <h2>Error !!!</h2>
+        <p>HTTP Error 404.0 - Not Found</p>
+      </div>
+    </div>
+  </body>
+</html>

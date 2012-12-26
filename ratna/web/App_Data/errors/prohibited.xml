@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<html>
+  <head>
+    <title>Prohibited</title>
+  </head>
+  <body>
+    <div id="mainDiv">
+      <div>
+        <h2>Prohibited.</h2>
+        <p>For auditing purpose your IP has been logged.</p>
+      </div>
+    </div>
+  </body>
+</html>

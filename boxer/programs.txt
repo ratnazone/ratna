@@ -1,0 +1,5 @@
+This folder contains code to box the "ratna software"
+
+creator - This program "collects all the necessary files into a specified folder"
+installer - code that installs ratna
+zipper - generates the zip file of the "creator files"

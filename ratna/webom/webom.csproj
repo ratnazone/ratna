@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{968EC5C5-0601-4622-81C0-9AA3995D15F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jardalu.Ratna.Web</RootNamespace>
+    <AssemblyName>Jardalu.Ratna.WebOM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\tools\jardalu.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>..\..\tools\external\zip\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applications\AppEngine.cs" />
+    <Compile Include="Applications\AppExecutor.cs" />
+    <Compile Include="Applications\AppInstaller.cs" />
+    <Compile Include="Applications\AppPathModule.cs" />
+    <Compile Include="Controls\IPhotoControl.cs" />
+    <Compile Include="Plugins\CollectionPath.cs" />
+    <Compile Include="Plugins\CollectionPathPlugin.cs" />
+    <Compile Include="Plugins\GalleryPlugin.cs" />
+    <Compile Include="Plugins\Gallery.cs" />
+    <Compile Include="Plugins\CustomResponsePlugin.cs" />
+    <Compile Include="Plugins\CustomResponse.cs" />
+    <Compile Include="Plugins\ManagedPath.cs" />
+    <Compile Include="Plugins\NotificationConfigurationPlugin.cs" />
+    <Compile Include="Plugins\NotificationConfiguration.cs" />
+    <Compile Include="Plugins\Template.cs" />
+    <Compile Include="Plugins\TemplatePlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Redirect\RedirectModule.cs" />
+    <Compile Include="Service\Admin\apps.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\article.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\comments.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\configuration.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\autopaths.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\formsmanage.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\gallery.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\groups.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\media.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\permissions.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\profile.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\siteconfiguration.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\template.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\Admin\users.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SitePaths.cs" />
+    <Compile Include="UI\Apps\AppDynamicPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Apps\AppUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\Actions\AppUploadedAction.cs" />
+    <Compile Include="Utilities\AppData\DataReader.cs" />
+    <Compile Include="Plugins\Configuration.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controls\IArticleControl.cs" />
+    <Compile Include="Controls\IThreadControl.cs" />
+    <Compile Include="CustomResponses\ResponderModule.cs" />
+    <Compile Include="ErrorCodes.cs" />
+    <Compile Include="Graphics\SupportedVideoTypes.cs" />
+    <Compile Include="Graphics\SupportedImageTypes.cs" />
+    <Compile Include="Parser\BoxParser.cs" />
+    <Compile Include="Plugins\SiteConfigurationPlugin.cs" />
+    <Compile Include="Plugins\SiteConfiguration.cs" />
+    <Compile Include="Plugins\ConfigurationPlugin.cs" />
+    <Compile Include="Resource\ConstantsExpressionBuilder.cs" />
+    <Compile Include="Resource\ResourceManager.cs" />
+    <Compile Include="Resource\ResourceReader.cs" />
+    <Compile Include="Service\Security\AuthenticationUtility.cs" />
+    <Compile Include="Service\Security\GroupAccessUtility.cs" />
+    <Compile Include="Service\Security\SecurityModule.cs" />
+    <Compile Include="Service\AccessAttribute.cs" />
+    <Compile Include="Service\ServiceBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\ServiceOutput.cs" />
+    <Compile Include="Plugins\ManagedPathPlugin.cs" />
+    <Compile Include="Utilities\AssemblyUtility.cs" />
+    <Compile Include="Utilities\Notifier.cs" />
+    <Compile Include="Utilities\SiteUtility.cs" />
+    <Compile Include="UI\FormlessPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\RatnaMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DynamicPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Snippets\SnippetAction.cs" />
+    <Compile Include="UI\Snippets\SnippetControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Snippets\SnippetManager.cs" />
+    <Compile Include="UI\Snippets\SupportedSnippetAttribute.cs" />
+    <Compile Include="UI\Utilities\SummaryUtility.cs" />
+    <Compile Include="UI\Utilities\TagUtility.cs" />
+    <Compile Include="UI\Utilities\ThreadUtility.cs" />
+    <Compile Include="Upload\Actions\AbstractUploadedAction.cs" />
+    <Compile Include="Upload\Actions\BlogPhotoUploadedAction.cs" />
+    <Compile Include="Upload\Actions\TemplateUploadedAction.cs" />
+    <Compile Include="Upload\Actions\OtherUploadedAction.cs" />
+    <Compile Include="Upload\Actions\VideoUploadedAction.cs" />
+    <Compile Include="Upload\Actions\DocumentUploadedAction.cs" />
+    <Compile Include="Upload\Actions\IFileUploadAction.cs" />
+    <Compile Include="Upload\Actions\PhotoUploadedAction.cs" />
+    <Compile Include="Upload\Actions\ProfilePhotoUploadedAction.cs" />
+    <Compile Include="Upload\FileUploader.cs" />
+    <Compile Include="Upload\UploadType.cs" />
+    <Compile Include="UrlRewrite\SiteUrlMapper.cs" />
+    <Compile Include="UrlRewrite\UrlRewriter.cs" />
+    <Compile Include="UrlRewrite\UrlRewriterManager.cs" />
+    <Compile Include="Utilities\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OM\RatnaOM.csproj">
+      <Project>{A1B91424-1B5D-4734-84D9-D9A9F2C178FB}</Project>
+      <Name>RatnaOM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.cobra">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

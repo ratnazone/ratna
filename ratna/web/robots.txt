@@ -1,0 +1,10 @@
+﻿User-agent: *
+Disallow: /bin/
+Disallow: /controls/
+Disallow: /external/
+Disallow: /scripts/
+Disallow: /Pages/
+Disallow: /r-admin/
+Disallow: /templates/
+Disallow: /App_Data/
+
